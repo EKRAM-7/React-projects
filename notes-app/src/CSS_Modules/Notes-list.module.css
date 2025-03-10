@@ -1,0 +1,105 @@
+.listContainer {
+    border: 2px solid black;
+    width: 70vw;
+    height: 80vh;
+    background-color: hsl(293, 69%, 74%);
+    box-sizing: border-box;
+    justify-self: center;
+    margin: 2rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: auto;
+    scrollbar-width: none; */
+}
+
+
+.actionBtnsDiv {
+    justify-self: center;
+    width: 80%;
+    height: 15%;
+    background-color: hsl(180, 49%, 88%);
+    box-sizing: border-box;
+    margin: 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: .5rem; */
+    border: .2rem solid black;
+}
+
+
+.actionBtn {
+    font-size: 100%;
+    width: 10%;
+    height: 70%;
+    border-radius: 15px;
+    padding: 0;
+    text-align: center;
+    height: 60%;
+}
+
+.notesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    border: 2px solid red;
+    overflow: auto;
+    height: 75%;
+    width: 90%;
+    scrollbar-width: none;
+}
+
+.addNote {
+     margin-right: 10px;
+}
+
+.searchNote {
+    margin-right: 10px;
+    
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    .listContainer {
+        
+    }
+}
+
+@media (max-width:650px) {
+    .actionBtn {
+        width: 20%;
+    }
+}
+
+
+/* L Mobile  */
+@media (max-width:425px) {
+
+    .listContainer {
+        width: 90vw;
+    }
+
+    .actionBtn {
+        width: 20%;
+    }
+    
+    .searchNote {
+        margin-right: 5px;
+    }
+}
+
+/* M Mobile */
+@media (max-width:375px) {
+
+}
+
+/* M Mobile */
+@media (max-width:320px) {
+    
+}
+
