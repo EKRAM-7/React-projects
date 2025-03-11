@@ -11,7 +11,7 @@ function NotesList() {
    
     let [notesObj, setNotesObj] = useState(JSON.parse(localStorage.getItem("notes")) || {});
     const [trigger, setTrigger] = useState(true);
-    let noteCount = useRef(0);
+    let noteCount = useRef(Object.keys(notesObj).length);
 
    
 
@@ -22,7 +22,7 @@ function NotesList() {
             tempNotesObj[noteCount.current] = {
                 title : noteTitle, content : ""
             }
-
+            console.log(tempNotesObj);
             setNotesObj(tempNotesObj);
             
             localStorage.setItem("notes", JSON.stringify(notesObj));
