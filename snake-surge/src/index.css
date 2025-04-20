@@ -54,7 +54,7 @@
 }
 
 .food {
-    background-image: url("./src/assets/fruit2.png");
+    background-image: url("./assets/fruit2.png");
     background-size: cover;
     background-position: center;
 }
