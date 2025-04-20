@@ -44,7 +44,7 @@ function Playground() {
         } else {
             gameInterval.current = setInterval(() => {
                 main();
-            }, 1000)
+            }, 300)
             isRunning.current = true;
         }
     }
