@@ -210,6 +210,7 @@ function Playground() {
 
 
         <div className="startGameDiv">
+            <h3>Start Game?</h3>
             <button className="start-btn" onClick={startGame}>start</button>
         </div>
 
