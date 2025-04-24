@@ -65,7 +65,12 @@ function Playground() {
 
 
     function handleButtonClick(dir) {
-        direction.current = dir;
+
+        // direction.current = dir;
+        if (dir === 'up' && direction.current !== 'down') direction.current = dir;
+        else if (dir === 'down' && direction.current !== 'up') direction.current = dir;
+        else if (dir === 'left' && direction.current !== 'right') direction.current = dir;
+        else if (dir === 'right' && direction.current !== 'left') direction.current = dir;
     }
 
         
